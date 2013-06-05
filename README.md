@@ -8,3 +8,13 @@ Basically, ran this jQuery function on each bootstrap page that has style exampl
 ```javascript
 $('.bs-docs-example').each(function() { console.log($('<div>').append($(this)).html()) });
 ```
+
+## Make it go
+
+```bash
+cd bootstrap_theme_test_page
+python -m SimpleHTTPServer
+open "http://localhost:8000"
+```
+
+The page uses CDNs. If testing your own custom themes, you'll probably want to change those.
